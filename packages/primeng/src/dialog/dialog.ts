@@ -5,24 +5,25 @@ import {
     Component,
     computed,
     contentChild,
+    effect,
     ElementRef,
     inject,
     InjectionToken,
     input,
     model,
     NgModule,
-    NgZone,
     numberAttribute,
     output,
     signal,
     TemplateRef,
+    untracked,
     viewChild,
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { addStyle, appendChild, getOuterHeight, getOuterWidth, getViewport, hasClass, removeClass, setAttribute, uuid } from '@primeuix/utils';
-import { SharedModule, TranslationKeys } from 'primeng/api';
+import { OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
 import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
 import { Bind } from 'primeng/bind';
 import { Button, ButtonProps } from 'primeng/button';
@@ -587,9 +588,21 @@ export class Dialog extends BaseComponent<DialogPassThrough> {
 
     focusTrapDisabled = computed(() => this.focusTrap() === false);
 
-    zone: NgZone = inject(NgZone);
-
     private overlayService: OverlayService = inject(OverlayService);
+
+    constructor() {
+        super();
+        effect(() => {
+            const isVisible = this.visible();
+            untracked(() => {
+                if (isVisible && !this.maskVisible) {
+                    this.maskVisible = true;
+                    this.renderMask.set(true);
+                    this.renderDialog.set(true);
+                }
+            });
+        });
+    }
 
     onInit() {
         if (this.breakpoints()) {
@@ -883,9 +896,7 @@ export class Dialog extends BaseComponent<DialogPassThrough> {
 
     bindDocumentDragListener() {
         if (!this.documentDragListener) {
-            this.zone.runOutsideAngular(() => {
-                this.documentDragListener = this.renderer.listen(this.document.defaultView, 'mousemove', this.onDrag.bind(this));
-            });
+            this.documentDragListener = this.renderer.listen(this.document.defaultView, 'mousemove', this.onDrag.bind(this));
         }
     }
 
@@ -898,9 +909,7 @@ export class Dialog extends BaseComponent<DialogPassThrough> {
 
     bindDocumentDragEndListener() {
         if (!this.documentDragEndListener) {
-            this.zone.runOutsideAngular(() => {
-                this.documentDragEndListener = this.renderer.listen(this.document.defaultView, 'mouseup', this.endDrag.bind(this));
-            });
+            this.documentDragEndListener = this.renderer.listen(this.document.defaultView, 'mouseup', this.endDrag.bind(this));
         }
     }
 
@@ -913,10 +922,8 @@ export class Dialog extends BaseComponent<DialogPassThrough> {
 
     bindDocumentResizeListeners() {
         if (!this.documentResizeListener && !this.documentResizeEndListener) {
-            this.zone.runOutsideAngular(() => {
-                this.documentResizeListener = this.renderer.listen(this.document.defaultView, 'mousemove', this.onResize.bind(this));
-                this.documentResizeEndListener = this.renderer.listen(this.document.defaultView, 'mouseup', this.resizeEnd.bind(this));
-            });
+            this.documentResizeListener = this.renderer.listen(this.document.defaultView, 'mousemove', this.onResize.bind(this));
+            this.documentResizeEndListener = this.renderer.listen(this.document.defaultView, 'mouseup', this.resizeEnd.bind(this));
         }
     }
 
