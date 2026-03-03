@@ -22,7 +22,17 @@ import {
     ViewRef
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
-import { addStyle, appendChild, getOuterHeight, getOuterWidth, getViewport, hasClass, removeClass, setAttribute, uuid } from '@primeuix/utils';
+import {
+    addStyle,
+    appendChild,
+    getOuterHeight,
+    getOuterWidth,
+    getViewport,
+    hasClass,
+    removeClass,
+    setAttribute,
+    uuid
+} from '@primeuix/utils';
 import { OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
 import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
 import { Bind } from 'primeng/bind';
@@ -45,7 +55,7 @@ const DIALOG_INSTANCE = new InjectionToken<Dialog>('DIALOG_INSTANCE');
 @Component({
     selector: 'p-dialog',
     standalone: true,
-    imports: [NgTemplateOutlet, Button, FocusTrap, TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon, SharedModule, Bind, MotionModule],
+    imports: [NgTemplateOutlet, Button, FocusTrap, SharedModule, Bind, MotionModule],
     template: `
         @if (renderMask()) {
             <div
@@ -553,6 +563,8 @@ export class Dialog extends BaseComponent<DialogPassThrough> {
     styleElement: HTMLStyleElement | null = null;
 
     _componentStyle = inject(DialogStyle);
+
+    overlayService = inject(OverlayService);
 
     private zIndexForLayering?: number;
 

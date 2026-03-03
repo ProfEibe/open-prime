@@ -9,6 +9,7 @@ import { ConnectedOverlayScrollHandler } from 'primeng/dom';
 import { MotionModule } from 'primeng/motion';
 import type { AppendTo, CSSProperties } from 'primeng/types/shared';
 import { VoidListener } from 'primeng/ts-helpers';
+import { Subscription } from 'rxjs';
 import { ZIndexUtils } from 'primeng/utils';
 import { OverlayContentTemplateContext } from 'primeng/types/overlay';
 import { OverlayStyle } from './style/overlaystyle';
@@ -491,8 +492,8 @@ export class Overlay extends BaseComponent {
     bindParentDragListener() {
         if (!this.parentDragSubscription && this.$appendTo() !== 'self' && this.targetEl) {
             this.parentDragSubscription = this.overlayService.parentDragObservable.subscribe((container: Element) => {
-                if (container.contains(this.targetEl)) {
-                    this.hide(this.overlayEl, true);
+                if (container.contains(this.targetEl())) {
+                    this.hide(this.overlayEl(), true);
                 }
             });
         }

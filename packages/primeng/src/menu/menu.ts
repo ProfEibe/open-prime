@@ -1,5 +1,22 @@
 import { isPlatformBrowser, NgTemplateOutlet } from '@angular/common';
-import { booleanAttribute, ChangeDetectionStrategy, Component, computed, contentChild, ElementRef, inject, input, NgModule, numberAttribute, output, signal, TemplateRef, viewChild, ViewEncapsulation, ViewRef } from '@angular/core';
+import {
+    booleanAttribute,
+    ChangeDetectionStrategy,
+    Component,
+    computed,
+    contentChild,
+    ElementRef,
+    inject,
+    input,
+    NgModule,
+    numberAttribute,
+    output,
+    signal,
+    TemplateRef,
+    viewChild,
+    ViewEncapsulation,
+    ViewRef
+} from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addStyle, appendChild, find, findSingle, focus, isTouchDevice, uuid } from '@primeuix/utils';
 import { MenuItem, OverlayService, SharedModule } from 'primeng/api';
@@ -25,15 +42,23 @@ import { MenuStyle } from './style/menustyle';
     standalone: true,
     imports: [NgTemplateOutlet, MenuItemContent, TooltipModule, SharedModule, SafeHtmlPipe, BindModule, MotionModule],
     template: `
-        @if (popup()) {
-            <p-motion [visible]="visible()" [appear]="popup()" name="p-anchored-overlay" [options]="computedMotionOptions()" (onBeforeEnter)="onOverlayBeforeEnter($event)" (onAfterLeave)="onOverlayAfterLeave()">
-                <ng-container *ngTemplateOutlet="sharedcontent"></ng-container>
-            </p-motion>
-        } @else {
-            <ng-container *ngTemplateOutlet="sharedcontent"></ng-container>
-        }
-        <ng-template #sharedcontent>
-            <div #container [class]="cn(cx('root'), styleClass())" [style]="sx('root')" (click)="onOverlayClick($event)" [attr.id]="$id()" [pBind]="ptm('root')" [attr.data-p]="dataP()">
+        @if (!popup() || overlayVisible()) {
+            <div
+                #container
+                [class]="cn(cx('root'), styleClass())"
+                [style]="sx('root')"
+                (click)="onOverlayClick($event)"
+                [attr.id]="$id()"
+                [pBind]="ptm('root')"
+                [attr.data-p]="dataP()"
+                [pMotion]="visible() || !popup()"
+                [pMotionName]="'p-anchored-overlay'"
+                [pMotionAppear]="!!popup()"
+                [pMotionDisabled]="!popup()"
+                [pMotionOptions]="computedMotionOptions()"
+                (pMotionOnBeforeEnter)="onOverlayBeforeEnter($event)"
+                (pMotionOnAfterLeave)="onOverlayAfterLeave()"
+            >
                 @if (startTemplate()) {
                     <div [class]="cx('start')" [pBind]="ptm('start')" [attr.data-pc-section]="'start'">
                         <ng-container *ngTemplateOutlet="startTemplate()"></ng-container>
@@ -400,7 +425,7 @@ export class Menu extends BaseComponent<MenuPassThrough> {
     onOverlayAfterLeave() {
         this.restoreOverlayAppend();
         this.onOverlayHide();
-        this.overlayVisible = false;
+        this.overlayVisible.set(false);
         this.onHide.emit({});
     }
 

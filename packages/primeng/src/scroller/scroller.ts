@@ -451,7 +451,6 @@ export class Scroller extends BaseComponent<VirtualScrollerPassThrough> {
             untracked(() => {
                 if (this.initialized && !this._lazy()) {
                     this.init();
-                    this.calculateAutoSize();
                 }
             });
         });
