@@ -17378,9 +17378,7 @@
           "id": "accessibility",
           "label": "Accessibility",
           "description": "Screen Reader InputMask directive is used with a native input element that implicitly includes any passed attribute. Value to describe the component can either be provided via label tag combined with id attribute or using aria-labelledby , aria-label attributes.",
-          "examples": {
-            "typescript": "<label for=\"date\">Date</label>\n<input pInputText id=\"date\" pInputMask=\"99/99/9999\" />\n\n<span id=\"phone\">Phone</span>\n<input pInputText pInputMask=\"(999) 999-9999\" aria-labelledby=\"phone\" />\n\n<input pInputText pInputMask=\"99\" aria-label=\"Age\" />"
-          }
+          "examples": null
         },
         {
           "id": "basic",
@@ -44644,9 +44642,7 @@
           "id": "example-",
           "label": "Example-",
           "description": "Unstyled components require styling using your preferred approach. We recommend using Tailwind CSS with PassThrough attributes, a combination that works seamlessly together. The tailwindcss-primeui even provides special variants such as p-outlined: , p-vertical for the PrimeNG components. The example below demonstrates how to style a button component with Tailwind CSS using PassThrough attributes. Before you begin, refer to the pass through section in the button documentation to familiarize yourself with the component's internal structure and PassThrough attributes. In this example, we'll target the root , label and icon elements to apply custom styles.",
-          "examples": {
-            "typescript": "<p-button\n    label=\"Search\"\n    icon=\"pi pi-search\"\n    [unstyled]=\"true\"\n    [pt]=\"{ \n        root: 'bg-teal-500 hover:bg-teal-700 active:bg-teal-900 cursor-pointer py-2 px-3 rounded-full border-0 flex gap-2',\n        label: 'text-white font-bold',\n        icon: 'text-white !text-lg' \n    }\"\n/>"
-          }
+          "examples": null
         },
         {
           "id": "global-",
@@ -44728,17 +44724,13 @@
           "id": "size-",
           "label": "Size-",
           "description": "Size of an icon is controlled with the font-size property of the element.",
-          "examples": {
-            "typescript": "<i class=\"pi pi-check\" style=\"font-size: 0.875rem\"></i>\n<i class=\"pi pi-times\" style=\"font-size: 1.313rem\"></i>\n<i class=\"pi pi-search\" style=\"font-size: 1.75rem\"></i>\n<i class=\"pi pi-user\" style=\"font-size: 2.188rem\"></i>"
-          }
+          "examples": null
         },
         {
           "id": "spin-",
           "label": "Spin-",
           "description": "Special pi-spin class applies infinite rotation to an icon.",
-          "examples": {
-            "typescript": "<i class=\"pi pi-spin pi-spinner\" style=\"font-size: 1.75rem\"></i>\n<i class=\"pi pi-spin pi-cog\" style=\"font-size: 1.75rem\"></i>"
-          }
+          "examples": null
         }
       ]
     },

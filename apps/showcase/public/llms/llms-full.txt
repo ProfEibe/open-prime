@@ -530,21 +530,9 @@ Here is the full list of PrimeIcons. More icons will be added periodically and y
 
 Size of an icon is controlled with the font-size property of the element.
 
-```typescript
-<i class="pi pi-check" style="font-size: 0.875rem"></i>
-<i class="pi pi-times" style="font-size: 1.313rem"></i>
-<i class="pi pi-search" style="font-size: 1.75rem"></i>
-<i class="pi pi-user" style="font-size: 2.188rem"></i>
-```
-
 ## Spin-
 
 Special pi-spin class applies infinite rotation to an icon.
-
-```typescript
-<i class="pi pi-spin pi-spinner" style="font-size: 1.75rem"></i>
-<i class="pi pi-spin pi-cog" style="font-size: 1.75rem"></i>
-```
 
 ---
 
@@ -18032,18 +18020,6 @@ InputMask component is used to enter input in a certain format such as numeric, 
 ## Accessibility
 
 Screen Reader InputMask directive is used with a native input element that implicitly includes any passed attribute. Value to describe the component can either be provided via label tag combined with id attribute or using aria-labelledby , aria-label attributes.
-
-**Example:**
-
-```typescript
-<label for="date">Date</label>
-<input pInputText id="date" pInputMask="99/99/9999" />
-
-<span id="phone">Phone</span>
-<input pInputText pInputMask="(999) 999-9999" aria-labelledby="phone" />
-
-<input pInputText pInputMask="99" aria-label="Age" />
-```
 
 ## Basic
 
