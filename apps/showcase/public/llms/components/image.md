@@ -125,7 +125,7 @@ Displays an image with preview and tranformation options. For multiple image, se
 | hideTransitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the hide animation **(Deprecated)** |
 | modalEnterAnimation | InputSignal<string> | 'p-modal-enter' | Enter animation class name of modal. |
 | modalLeaveAnimation | InputSignal<string> | 'p-modal-leave' | Leave animation class name of modal. |
-| appendTo | InputSignal<AppendTo> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| appendTo | HTMLElement \| ElementRef \| TemplateRef<any> \| "self" \| "body" \| null \| undefined | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 | maskMotionOptions | InputSignal<MotionOptions> | ... | The motion options for the mask. |
 | motionOptions | InputSignal<MotionOptions> | ... | The motion options. |
 
