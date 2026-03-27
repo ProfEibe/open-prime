@@ -1,6 +1,6 @@
 # PrimeNG Documentation
 
-Generated: 2026-03-26
+Generated: 2026-03-27
 
 ---
 
@@ -5412,6 +5412,8 @@ Use align to control snap alignment and slidesPerPage to show partial slides.
 ```typescript
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { ChevronLeft } from '@primeicons/angular/chevron-left';
+import { ChevronRight } from '@primeicons/angular/chevron-right';
 
 @Component({
     template: `
@@ -5447,7 +5449,7 @@ import { CarouselModule } from 'primeng/carousel';
         </div>
     `,
     standalone: true,
-    imports: [CarouselModule]
+    imports: [CarouselModule, ChevronLeft, ChevronRight]
 })
 export class CarouselAlignmentDemo {
     items: any[] = [1, 2, 3, 4, 5];
@@ -5463,6 +5465,8 @@ Composition-based carousel using native scroll-snap with sub-components for root
 ```typescript
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { ChevronLeft } from '@primeicons/angular/chevron-left';
+import { ChevronRight } from '@primeicons/angular/chevron-right';
 
 @Component({
     template: `
@@ -5498,7 +5502,7 @@ import { CarouselModule } from 'primeng/carousel';
         </div>
     `,
     standalone: true,
-    imports: [CarouselModule]
+    imports: [CarouselModule, ChevronLeft, ChevronRight]
 })
 export class CarouselBasicDemo {
     items: any[] = [1, 2, 3, 4, 5];
@@ -5566,6 +5570,8 @@ Enable continuous looping with the loop property. Use slidesPerPage to show part
 ```typescript
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { ChevronLeft } from '@primeicons/angular/chevron-left';
+import { ChevronRight } from '@primeicons/angular/chevron-right';
 
 @Component({
     template: `
@@ -5601,7 +5607,7 @@ import { CarouselModule } from 'primeng/carousel';
         </div>
     `,
     standalone: true,
-    imports: [CarouselModule]
+    imports: [CarouselModule, ChevronLeft, ChevronRight]
 })
 export class CarouselLoopDemo {
     items: any[] = [1, 2, 3, 4, 5];
@@ -5617,6 +5623,8 @@ Set orientation to vertical for a vertical carousel layout.
 ```typescript
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { ChevronUp } from '@primeicons/angular/chevron-up';
+import { ChevronDown } from '@primeicons/angular/chevron-down';
 
 @Component({
     template: `
@@ -5647,7 +5655,7 @@ import { CarouselModule } from 'primeng/carousel';
         </div>
     `,
     standalone: true,
-    imports: [CarouselModule]
+    imports: [CarouselModule, ChevronUp, ChevronDown]
 })
 export class CarouselOrientationDemo {
     items: any[] = [1, 2, 3, 4, 5];
@@ -5663,6 +5671,8 @@ Enable autoSize to allow items with variable widths.
 ```typescript
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { ChevronLeft } from '@primeicons/angular/chevron-left';
+import { ChevronRight } from '@primeicons/angular/chevron-right';
 
 @Component({
     template: `
@@ -5698,7 +5708,7 @@ import { CarouselModule } from 'primeng/carousel';
         </div>
     `,
     standalone: true,
-    imports: [CarouselModule]
+    imports: [CarouselModule, ChevronLeft, ChevronRight]
 })
 export class CarouselVariableSizeDemo {
     items: any[] = [{ width: '120px' }, { width: '80px' }, { width: '200px' }, { width: '160px' }, { width: '220px' }, { width: '180px' }, { width: '280px' }, { width: '100px' }];
@@ -9693,6 +9703,8 @@ CommandMenu requires a collection of options via the options property. Use group
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
+import { ArrowUp } from '@primeicons/angular/arrow-up';
+import { ArrowDown } from '@primeicons/angular/arrow-down';
 
 @Component({
     template: `
@@ -9718,7 +9730,7 @@ import { Component, OnInit } from '@angular/core';
         </p-commandmenu>
     `,
     standalone: true,
-    imports: []
+    imports: [ArrowUp, ArrowDown]
 })
 export class CommandmenuBasicDemo implements OnInit {
     commands!: any[];
@@ -9824,6 +9836,8 @@ The search value can be controlled with two-way binding using [(search)] . An em
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
+import { ArrowUp } from '@primeicons/angular/arrow-up';
+import { ArrowDown } from '@primeicons/angular/arrow-down';
 
 @Component({
     template: `
@@ -9862,7 +9876,7 @@ import { Component, OnInit } from '@angular/core';
         </p-commandmenu>
     `,
     standalone: true,
-    imports: []
+    imports: [ArrowUp, ArrowDown]
 })
 export class CommandmenuControlledDemo implements OnInit {
     commands!: any[];
@@ -9969,6 +9983,8 @@ Custom content can be displayed for each item using the item template.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
+import { ArrowUp } from '@primeicons/angular/arrow-up';
+import { ArrowDown } from '@primeicons/angular/arrow-down';
 
 @Component({
     template: `
@@ -10003,7 +10019,7 @@ import { Component, OnInit } from '@angular/core';
         </p-commandmenu>
     `,
     standalone: true,
-    imports: []
+    imports: [ArrowUp, ArrowDown]
 })
 export class CommandmenuCustomDemo implements OnInit {
     commands!: any[];
@@ -10109,6 +10125,8 @@ A custom filter function can be provided with the filter property. The function 
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
+import { ArrowUp } from '@primeicons/angular/arrow-up';
+import { ArrowDown } from '@primeicons/angular/arrow-down';
 
 @Component({
     template: `
@@ -10145,7 +10163,7 @@ import { Component, OnInit } from '@angular/core';
         </p-commandmenu>
     `,
     standalone: true,
-    imports: []
+    imports: [ArrowUp, ArrowDown]
 })
 export class CommandmenuFilterDemo implements OnInit {
     commands!: any[];
@@ -10274,6 +10292,8 @@ CommandMenu can be used inside a Dialog to create a command palette experience. 
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { Dialog, DialogModule } from 'primeng/dialog';
+import { ArrowUp } from '@primeicons/angular/arrow-up';
+import { ArrowDown } from '@primeicons/angular/arrow-down';
 
 @Component({
     template: `
@@ -10320,7 +10340,7 @@ import { Dialog, DialogModule } from 'primeng/dialog';
         </p-dialog>
     `,
     standalone: true,
-    imports: [DialogModule]
+    imports: [DialogModule, ArrowUp, ArrowDown]
 })
 export class CommandmenuWithDialogDemo implements OnInit {
     visible: boolean = false;
@@ -18136,6 +18156,18 @@ Gallery provides a composition-based API with sub-components for full control ov
 
 ```typescript
 import { Component } from '@angular/core';
+import { GalleryModule } from 'primeng/gallery';
+import { ChevronLeft } from '@primeicons/angular/chevron-left';
+import { ChevronRight } from '@primeicons/angular/chevron-right';
+import { Replay } from '@primeicons/angular/replay';
+import { Refresh } from '@primeicons/angular/refresh';
+import { SearchPlus } from '@primeicons/angular/search-plus';
+import { SearchMinus } from '@primeicons/angular/search-minus';
+import { ArrowsH } from '@primeicons/angular/arrows-h';
+import { ArrowsV } from '@primeicons/angular/arrows-v';
+import { Download } from '@primeicons/angular/download';
+import { ArrowUpRightAndArrowDownLeftFromCenter } from '@primeicons/angular/arrow-up-right-and-arrow-down-left-from-center';
+import { ArrowDownLeftAndArrowUpRightToCenter } from '@primeicons/angular/arrow-down-left-and-arrow-up-right-to-center';
 
 @Component({
     template: `
@@ -18195,9 +18227,41 @@ import { Component } from '@angular/core';
         </p-gallery>
     `,
     standalone: true,
-    imports: []
+    imports: [GalleryModule, ChevronLeft, ChevronRight, Replay, Refresh, SearchPlus, SearchMinus, ArrowsH, ArrowsV, Download, ArrowUpRightAndArrowDownLeftFromCenter, ArrowDownLeftAndArrowUpRightToCenter]
 })
 export class GalleryBasicDemo {
+    photos: [number, number, number][] = [
+        [10, 1200, 800],
+        [11, 800, 1200],
+        [15, 1400, 700],
+        [16, 700, 1050],
+        [17, 1000, 1000],
+        [18, 1300, 650],
+        [19, 600, 1200],
+        [20, 1200, 900],
+        [27, 750, 1125],
+        [28, 1400, 800],
+        [29, 800, 1100],
+        [36, 1100, 700],
+        [37, 650, 1300],
+        [39, 1200, 750],
+        [42, 900, 1200],
+        [43, 1300, 800],
+        [47, 700, 1400],
+        [48, 1000, 800],
+        [49, 800, 1000],
+        [50, 1400, 600],
+        [52, 600, 900],
+        [53, 1200, 1200],
+        [54, 900, 600],
+        [55, 750, 1000],
+        [56, 1100, 800],
+        [57, 1400, 900],
+        [58, 850, 1275],
+        [59, 1000, 600],
+        [60, 600, 1000],
+        [64, 1300, 1300]
+    ];
     images: any = this.photos.map(([id, w, h]) => `https://picsum.photos/id/${id}/${w}/${h}`);
 }
 ```
@@ -18210,6 +18274,17 @@ Gallery can be used as a lightbox by combining it with a grid of thumbnails. Cli
 
 ```typescript
 import { Component, signal } from '@angular/core';
+import { GalleryModule } from 'primeng/gallery';
+import { ChevronLeft } from '@primeicons/angular/chevron-left';
+import { ChevronRight } from '@primeicons/angular/chevron-right';
+import { Replay } from '@primeicons/angular/replay';
+import { Refresh } from '@primeicons/angular/refresh';
+import { SearchPlus } from '@primeicons/angular/search-plus';
+import { SearchMinus } from '@primeicons/angular/search-minus';
+import { ArrowsH } from '@primeicons/angular/arrows-h';
+import { ArrowsV } from '@primeicons/angular/arrows-v';
+import { Download } from '@primeicons/angular/download';
+import { Times } from '@primeicons/angular/times';
 
 @Component({
     template: `
@@ -18279,9 +18354,41 @@ import { Component, signal } from '@angular/core';
         }
     `,
     standalone: true,
-    imports: []
+    imports: [GalleryModule, ChevronLeft, ChevronRight, Replay, Refresh, SearchPlus, SearchMinus, ArrowsH, ArrowsV, Download, Times]
 })
 export class GalleryGridDemo {
+    photos: [number, number, number][] = [
+        [10, 1200, 800],
+        [11, 800, 1200],
+        [15, 1400, 700],
+        [16, 700, 1050],
+        [17, 1000, 1000],
+        [18, 1300, 650],
+        [19, 600, 1200],
+        [20, 1200, 900],
+        [27, 750, 1125],
+        [28, 1400, 800],
+        [29, 800, 1100],
+        [36, 1100, 700],
+        [37, 650, 1300],
+        [39, 1200, 750],
+        [42, 900, 1200],
+        [43, 1300, 800],
+        [47, 700, 1400],
+        [48, 1000, 800],
+        [49, 800, 1000],
+        [50, 1400, 600],
+        [52, 600, 900],
+        [53, 1200, 1200],
+        [54, 900, 600],
+        [55, 750, 1000],
+        [56, 1100, 800],
+        [57, 1400, 900],
+        [58, 850, 1275],
+        [59, 1000, 600],
+        [60, 600, 1000],
+        [64, 1300, 1300]
+    ];
     images: any = this.photos.map(([id, w, h]) => `https://picsum.photos/id/${id}/${w}/${h}`);
     activeIndex: number = 0;
     open = signal(false);
@@ -19601,6 +19708,7 @@ import { FormsModule } from '@angular/forms';
 import { SelectModule } from 'primeng/select';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputGroupModule } from 'primeng/inputgroup';
+import { EyeDropper } from '@primeicons/angular/eye-dropper';
 
 @Component({
     template: `
@@ -19752,7 +19860,7 @@ import { InputGroupModule } from 'primeng/inputgroup';
         </div>
     `,
     standalone: true,
-    imports: [SelectModule, FloatLabelModule, InputGroupModule, FormsModule]
+    imports: [SelectModule, FloatLabelModule, InputGroupModule, FormsModule, EyeDropper]
 })
 export class InputColorAdvancedDemo {
     color: string = '';
@@ -19777,6 +19885,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SelectModule } from 'primeng/select';
 import { InputGroupModule } from 'primeng/inputgroup';
+import { EyeDropper } from '@primeicons/angular/eye-dropper';
 
 @Component({
     template: `
@@ -19844,7 +19953,7 @@ import { InputGroupModule } from 'primeng/inputgroup';
         </p-inputcolor>
     `,
     standalone: true,
-    imports: [SelectModule, InputGroupModule, FormsModule]
+    imports: [SelectModule, InputGroupModule, FormsModule, EyeDropper]
 })
 export class InputColorBasicDemo {
     color: string = '#276def';
@@ -19887,6 +19996,7 @@ Demonstrates tracking color value changes during interaction and when interactio
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { EyeDropper } from '@primeicons/angular/eye-dropper';
 
 @Component({
     template: `
@@ -19924,7 +20034,7 @@ import { FormsModule } from '@angular/forms';
         </div>
     `,
     standalone: true,
-    imports: [FormsModule]
+    imports: [FormsModule, EyeDropper]
 })
 export class InputColorControlledDemo {
     value: ColorInstance = parseColor('#000000')!;
@@ -19950,6 +20060,7 @@ InputColor can be used inside a Popover, with a color swatch as the trigger.
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Popover, PopoverModule } from 'primeng/popover';
+import { EyeDropper } from '@primeicons/angular/eye-dropper';
 
 @Component({
     template: `
@@ -19987,7 +20098,7 @@ import { Popover, PopoverModule } from 'primeng/popover';
         </div>
     `,
     standalone: true,
-    imports: [PopoverModule, FormsModule]
+    imports: [PopoverModule, FormsModule, EyeDropper]
 })
 export class InputColorPopoverDemo {
     color: string = '#0099ff';
