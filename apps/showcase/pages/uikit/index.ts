@@ -11,68 +11,68 @@ import { TooltipModule } from 'primeng/tooltip';
     standalone: true,
     imports: [CommonModule, Ripple, BadgeModule, TooltipModule, RouterModule],
     template: ` <div>
-        <div style="border-radius: 50px" class="overflow-hidden mb-8 flex items-center">
+        <div style="border-radius: 50px" class="overflow-hidden mb-7 flex items-center">
             <img alt="PrimeNG Designer" src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/uikit/primeone-cover-{{ isDarkMode() ? 'dark' : 'light' }}.jpg" class="w-full" />
         </div>
 
-        <div class="card mb-8" style="border-radius: 50px">
-            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20 mb-20">
+        <div class="card mb-7" style="border-radius: 50px">
+            <div class="flex flex-col md:flex-row items-center gap-5 md:gap-18 mb-18">
                 <div class="w-full md:w-6/12">
                     <img alt="PrimeNG Designer" src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/uikit/uikit-figma.png" class="w-full" />
                 </div>
                 <div class="w-full md:w-6/12">
-                    <div class="text-primary font-bold mb-2">UP-TO-DATE</div>
-                    <div class="text-surface-900 dark:text-surface-0 text-5xl font-bold mb-4">Best Features of Figma</div>
-                    <p class="mb-4 text-lg">PrimeOne for Figma uses the latest powerful features like components, variants, auto layout, styles, variables and interactive components. It'll always follow the best practices.</p>
+                    <div class="text-primary font-bold mb-2 text-sm">UP-TO-DATE</div>
+                    <div class="text-surface-900 dark:text-surface-0 text-4xl font-bold mb-4">Best Features of Figma</div>
+                    <p class="mb-4">PrimeOne for Figma uses the latest powerful features like components, variants, auto layout, styles, variables and interactive components. It'll always follow the best practices.</p>
 
-                    <ul class="flex flex-wrap m-0 p-0 text-lg">
-                        <li class="flex items-center w-6/12 p-4">
+                    <ul class="flex flex-wrap m-0 p-0">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Auto Layout</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Variants</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Variables and Styles</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Interactive Components</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Boolean, Instance Swap and Text Properties</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Nested Instances</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20 mb-20">
+            <div class="flex flex-col md:flex-row items-center gap-5 md:gap-18 mb-18">
                 <div class="w-full md:w-6/12">
-                    <div class="text-primary font-bold mb-2">ENTERPRISE GRADE</div>
-                    <div class="text-surface-900 dark:text-surface-0 text-5xl font-bold mb-4">Powerful System</div>
-                    <p class="mb-4 text-lg">Save countless hours on every project with a carefully designed system that uses Prime UI Suite components. Start producing design results in no time.</p>
+                    <div class="text-primary font-bold mb-2 text-sm">ENTERPRISE GRADE</div>
+                    <div class="text-surface-900 dark:text-surface-0 text-4xl font-bold mb-4">Powerful System</div>
+                    <p class="mb-4">Save countless hours on every project with a carefully designed system that uses Prime UI Suite components. Start producing design results in no time.</p>
 
-                    <ul class="flex flex-wrap m-0 p-0 text-lg">
-                        <li class="flex items-center w-6/12 p-4">
+                    <ul class="flex flex-wrap m-0 p-0">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Numerous Components</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Icon Library</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Easy Customization</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Atomic Approach</span>
                         </li>
@@ -82,50 +82,50 @@ import { TooltipModule } from 'primeng/tooltip';
                     <img alt="PrimeNG Designer" src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/uikit/uikit-system.png" class="w-full" />
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20 mb-20">
+            <div class="flex flex-col md:flex-row items-center gap-5 md:gap-18 mb-18">
                 <div class="w-full md:w-6/12">
                     <img alt="PrimeNG Designer" src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/uikit/uikit-themes.png" class="w-full" />
                 </div>
                 <div class="w-full md:w-6/12">
-                    <div class="text-primary font-bold mb-2">DARK MODE</div>
-                    <div class="text-surface-900 dark:text-surface-0 text-5xl font-bold mb-4">Two Themes</div>
-                    <p class="mb-4 text-lg">PrimeOne is designed based on Aura Light and Aura Dark themes. Easily change the themes of your designs using Figma's native variable modes.</p>
+                    <div class="text-primary font-bold mb-2 text-sm">DARK MODE</div>
+                    <div class="text-surface-900 dark:text-surface-0 text-4xl font-bold mb-4">Two Themes</div>
+                    <p class="mb-4">PrimeOne is designed based on Aura Light and Aura Dark themes. Easily change the themes of your designs using Figma's native variable modes.</p>
 
-                    <ul class="flex flex-wrap m-0 p-0 text-lg">
-                        <li class="flex items-center w-6/12 p-4">
+                    <ul class="flex flex-wrap m-0 p-0">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Aura Light</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Aura Dark</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20 mb-20">
+            <div class="flex flex-col md:flex-row items-center gap-5 md:gap-18 mb-18">
                 <div class="w-full md:w-6/12">
-                    <div class="text-primary font-bold mb-2">VARIABLE MANAGEMENT</div>
-                    <div class="text-5xl font-bold mb-4">Variables Support</div>
-                    <p class="mb-4 text-lg">
+                    <div class="text-primary font-bold mb-2 text-sm">VARIABLE MANAGEMENT</div>
+                    <div class="text-4xl font-bold mb-4">Variables Support</div>
+                    <p class="mb-4">
                         Empower yourself with unprecedented control over your designs. Native Figma Variables unlock a whole new level of flexibility, allowing you to create, manage, and apply design tokens seamlessly—without relying on external
                         plugins.
                     </p>
 
-                    <ul class="flex flex-wrap m-0 p-0 text-lg">
-                        <li class="flex items-center w-6/12 p-4">
+                    <ul class="flex flex-wrap m-0 p-0">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Countless Variables</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Light and Dark Modes</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Well Documented</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Primitive, Semantic and Component Collections</span>
                         </li>
@@ -135,43 +135,43 @@ import { TooltipModule } from 'primeng/tooltip';
                     <img alt="Tokens Support" src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/uikit/uikit-tokens.png" class="w-full" />
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
+            <div class="flex flex-col md:flex-row items-center gap-5 md:gap-18">
                 <div class="w-full md:w-6/12">
                     <img alt="PrimeNG Designer" src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/designer/feature-2.png" class="w-full" />
                 </div>
                 <div class="w-full md:w-6/12">
-                    <div class="text-primary font-bold mb-2">AUTOMATED</div>
-                    <div class="text-5xl font-bold mb-4">Figma to Theme Code</div>
-                    <p class="mb-4 text-lg">
+                    <div class="text-primary font-bold mb-2 text-sm">AUTOMATED</div>
+                    <div class="text-4xl font-bold mb-4">Figma to Theme Code</div>
+                    <p class="mb-4">
                         <i>This feature requires a <a routerLink="/designer" class="doc-link">Theme Designer</a> subscription.</i>
                     </p>
-                    <p class="mb-4 text-lg">
+                    <p class="mb-4">
                         Sync design tokens from Figma to theme code with ease. Export token.json to the Visual Editor or generate and sync themes directly to your repository via the Figma plugin, eliminating manual steps and speeding up your
                         workflow.
                     </p>
 
-                    <ul class="flex flex-wrap m-0 p-0 text-lg">
-                        <li class="flex items-center w-6/12 p-4">
+                    <ul class="flex flex-wrap m-0 p-0">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Automatic Mapping</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Eliminate Handoff</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">CI Pipeline</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Live Preview</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Maintain Perfect Fidelity</span>
                         </li>
-                        <li class="flex items-center w-6/12 p-4">
+                        <li class="flex items-center w-6/12 p-3">
                             <i class="pi pi-check-circle text-green-600 mr-2"></i>
                             <span class="font-bold">Verify Synchorization</span>
                         </li>
@@ -182,15 +182,15 @@ import { TooltipModule } from 'primeng/tooltip';
 
         <a
             href="https://www.figma.com/design/iKOqMjb5gBhqMQ0bZyzD0Y/Preview-%7C-PrimeOne-%7C-4.0.0?node-id=806-36648&t=PfCXfPrG4kKRW1jB-1"
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-12 mb-8 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 border-2 border-transparent hover:border-primary transition-colors duration-300"
+            class="flex flex-col md:flex-row items-center justify-center gap-7 p-11 mb-7 bg-linear-to-br from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 border-2 border-transparent hover:border-primary transition-colors duration-300"
             target="_blank"
             rel="noopener noreferrer"
             style="border-radius: 50px"
         >
             <div class="flex flex-col items-center md:items-start text-center md:text-left">
                 <span class="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Figma UI Kit</span>
-                <span class="text-gray-900 dark:text-white text-5xl md:text-6xl font-bold mb-3">Preview</span>
-                <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl">Explore our complete design system with all components, variants, and interactive elements in Figma</p>
+                <span class="text-gray-900 dark:text-white text-4xl md:text-4xl font-bold mb-3">Preview</span>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl">Explore our complete design system with all components, variants, and interactive elements in Figma</p>
             </div>
             <div class="flex items-center justify-center">
                 <svg width="80" height="80" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
@@ -203,136 +203,136 @@ import { TooltipModule } from 'primeng/tooltip';
             </div>
         </a>
 
-        <div class="card mb-8" style="border-radius: 50px">
-            <div class="text-surface-900 dark:text-surface-0 font-bold text-5xl mb-6 text-center">Pricing</div>
-            <div class="mb-2 text-center leading-normal text-lg">Choose the right plan for your business. Whether you are an individual or a member of a team, UI Kit is available for affordable prices.</div>
-            <a href="https://www.primefaces.org/uikit/licenses" class="mb-12 text-primary font-medium hover:underline text-center block">View License Details</a>
+        <div class="card mb-7" style="border-radius: 50px">
+            <div class="text-surface-900 dark:text-surface-0 font-bold text-4xl mb-5 text-center">Pricing</div>
+            <div class="mb-2 text-center leading-normal text-sm">Choose the right plan for your business. Whether you are an individual or a member of a team, UI Kit is available for affordable prices.</div>
+            <a href="https://www.primefaces.org/uikit/licenses" class="mb-11 text-primary font-medium hover:underline text-center block text-sm">View License Details</a>
 
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 lg:col-span-4">
-                    <div class="p-4 h-full">
-                        <div class="shadow p-8 h-full flex flex-col bg-surface-0 dark:bg-surface-900" style="border-radius: 6px">
-                            <div class="text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Single Designer</div>
-                            <div class="text-surface-600 dark:text-surface-200 font-medium">For individual designers</div>
+                    <div class="p-3 h-full">
+                        <div class="shadow-sm p-7 h-full flex flex-col bg-surface-0 dark:bg-surface-900" style="border-radius: 6px">
+                            <div class="text-surface-900 dark:text-surface-0 font-medium text-lg mb-2">Single Designer</div>
+                            <div class="text-surface-600 dark:text-surface-200 font-medium text-sm">For individual designers</div>
                             <hr class="my-4 mx-0 border-t border-0 border-surface" />
                             <div class="flex gap-4 flex-wrap">
-                                <span class="text-2xl font-bold text-surface-900 dark:text-surface-0">$249</span>
+                                <span class="text-xl font-bold text-surface-900 dark:text-surface-0">$249</span>
                             </div>
                             <hr class="my-4 mx-0 border-t border-0 border-surface" />
-                            <ul class="list-none p-0 m-0 grow text-lg">
-                                <li class="flex items-center mb-4">
+                            <ul class="list-none p-0 m-0 grow">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span class="font-bold">1 Designer</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Auto Layout & Variants</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Interactive Components</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Variables Support</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span class="inline-flex items-center gap-2">1 Year Free Updates <p-badge pTooltip="$99 for + 1 Year" value="?" severity="secondary" /></span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Use on Unlimited Projects</span>
                                 </li>
                             </ul>
                             <hr class="mb-4 mx-0 border-t border-0 border-surface mt-auto" />
-                            <a href="https://primeui.store/uikit" pRipple class="bg-blue-500 text-white hover:bg-blue-400 p-4 w-full rounded-border text-center transition-colors duration-300 font-bold">Buy Now</a>
+                            <a href="https://primeui.store/uikit" pRipple class="bg-blue-500 text-white hover:bg-blue-400 p-3 w-full rounded-border text-center transition-colors duration-300 font-bold">Buy Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-span-12 lg:col-span-4">
-                    <div class="p-4 h-full">
-                        <div class="shadow p-8 h-full flex flex-col bg-surface-0 dark:bg-surface-900" style="border-radius: 6px">
-                            <div class="text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Team</div>
-                            <div class="text-surface-600 dark:text-surface-200 font-medium">For small teams</div>
+                    <div class="p-3 h-full">
+                        <div class="shadow-sm p-7 h-full flex flex-col bg-surface-0 dark:bg-surface-900" style="border-radius: 6px">
+                            <div class="text-surface-900 dark:text-surface-0 font-medium text-lg mb-2">Team</div>
+                            <div class="text-surface-600 dark:text-surface-200 font-medium text-sm">For small teams</div>
                             <hr class="my-4 mx-0 border-t border-0 border-surface" />
                             <div class="flex gap-4 flex-wrap">
                                 <div class="flex gap-4 flex-wrap">
-                                    <span class="text-2xl font-bold text-surface-900 dark:text-surface-0">$990</span>
+                                    <span class="text-xl font-bold text-surface-900 dark:text-surface-0">$990</span>
                                 </div>
                             </div>
                             <hr class="my-4 mx-0 border-t border-0 border-surface" />
-                            <ul class="list-none p-0 m-0 grow text-lg">
-                                <li class="flex items-center mb-4">
+                            <ul class="list-none p-0 m-0 grow">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span class="font-bold">Up to 5 Designers</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Auto Layout & Variants</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Interactive Components</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Variables Support</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span class="inline-flex items-center gap-2">1 Year Free Updates <p-badge pTooltip="$249 for + 1 Year" value="?" severity="secondary" /></span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Use on Unlimited Projects</span>
                                 </li>
                             </ul>
                             <hr class="mb-4 mx-0 border-t border-0 border-surface" />
-                            <a href="https://primeui.store/uikit" pRipple class="bg-purple-500 text-white hover:bg-purple-400 p-4 w-full rounded-border text-center transition-colors duration-300 font-bold">Buy Now</a>
+                            <a href="https://primeui.store/uikit" pRipple class="bg-purple-500 text-white hover:bg-purple-400 p-3 w-full rounded-border text-center transition-colors duration-300 font-bold">Buy Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-span-12 lg:col-span-4">
-                    <div class="p-4 h-full">
-                        <div class="shadow p-8 flex flex-col bg-surface-0 dark:bg-surface-900" style="border-radius: 6px">
-                            <div class="text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Enterprise</div>
-                            <div class="text-surface-600 dark:text-surface-200 font-medium">For large teams</div>
+                    <div class="p-3 h-full">
+                        <div class="shadow-sm p-7 flex flex-col bg-surface-0 dark:bg-surface-900" style="border-radius: 6px">
+                            <div class="text-surface-900 dark:text-surface-0 font-medium text-lg mb-2">Enterprise</div>
+                            <div class="text-surface-600 dark:text-surface-200 font-medium text-sm">For large teams</div>
                             <hr class="my-4 mx-0 border-t border-0 border-surface" />
                             <div class="flex gap-4 flex-wrap">
-                                <span class="text-2xl font-bold text-surface-900 dark:text-surface-0">EXCLUSIVE DEALS</span>
+                                <span class="text-xl font-bold text-surface-900 dark:text-surface-0">EXCLUSIVE DEALS</span>
                             </div>
                             <hr class="my-4 mx-0 border-t border-0 border-surface" />
-                            <ul class="list-none p-0 m-0 grow text-lg">
-                                <li class="flex items-center mb-4">
+                            <ul class="list-none p-0 m-0 grow">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span class="font-bold">Unlimited Designers</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Auto Layout & Variants</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Interactive Components</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Variables Support</span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span class="inline-flex items-center gap-2">1 Year Free Updates <p-badge pTooltip="Contact Us" value="?" severity="secondary" /></span>
                                 </li>
-                                <li class="flex items-center mb-4">
+                                <li class="flex items-center mb-3">
                                     <i class="pi pi-check-circle text-green-500 mr-2"></i>
                                     <span>Use on Unlimited Projects</span>
                                 </li>
                             </ul>
                             <hr class="mb-4 mx-0 border-t border-0 border-surface" />
-                            <a href="mailto:contact@primetek.com.tr" pRipple class="bg-slate-500 text-white hover:bg-slate-400 p-4 w-full rounded-border text-center transition-colors duration-300 font-bold">Contact Us</a>
+                            <a href="mailto:contact@primetek.com.tr" pRipple class="bg-slate-500 text-white hover:bg-slate-400 p-3 w-full rounded-border text-center transition-colors duration-300 font-bold">Contact Us</a>
                         </div>
                     </div>
                 </div>
