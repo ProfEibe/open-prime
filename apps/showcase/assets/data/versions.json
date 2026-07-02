@@ -1,5 +1,10 @@
 [
     {
+        "version": "v22",
+        "name": "v22",
+        "url": "https://profeibe.github.io/open-prime"
+    },
+    {
         "version": "v21",
         "name": "v21",
         "url": "https://primeng.org"
